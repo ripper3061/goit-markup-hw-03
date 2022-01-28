@@ -81,9 +81,6 @@ body {
   list-style: none;
 }
 
-.section-none-title {
-  display: none;
-}
 /* hero */
 .hero-title {
   color: var(--primary-white-color);
