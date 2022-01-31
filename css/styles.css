@@ -4,7 +4,7 @@
 цвет акцента #2196F3
 белый #FFFFFF
 черный #000000
-футер rgba(255, 255, 255, 0,6)
+футер текст rgba(255, 255, 255, 0,6)
 */
 
 :root {
@@ -13,8 +13,10 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
-  --secondary-text-color: rgba(255, 255, 255, 0.6);
+  --footer-text-color: rgba(255, 255, 255, 0.6);
   --bcg-button-color: #f5f4fa;
+  --secondary-bcg-color: #f5f4fa;
+  --footer-bcg-color: #2f303a;
 }
 
 body {
@@ -25,6 +27,15 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 /* header */
@@ -76,20 +87,35 @@ body {
 
 /* main */
 
-/* убирает точки в списках */
+/* убирает точки и margin в списках */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
+/* убирает margin в h3 */
+.title {
+  padding: 0;
+  margin: 0;
+}
 /* hero */
+
+.hero {
+  text-align: center;
+  background-color: #212121;
+  outline: 2px solid tomato;
+}
 .hero-title {
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
 }
 
 /* other sections styles */
@@ -99,6 +125,9 @@ body {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 /* секция Наши проекты в портфолио */
@@ -115,34 +144,68 @@ body {
 }
 
 /* секция our features в индекс */
+.features-list {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .features-list .title {
   color: var(--secondary-title-color);
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
+}
+
+.features-list p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+/* секция чем мы занимаемся */
+.working {
+  padding-bottom: 94px;
 }
 
 /* секция наша команда в индекс */
+.team {
+  background-color: var(--secondary-bcg-color);
+
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .team-list .title {
   color: var(--secondary-title-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .team-list p {
   line-height: 1.19;
   text-align: center;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 /* footer */
+.footer {
+  background-color: var(--footer-bcg-color);
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 .footer-address {
   color: var(--primary-white-color);
 }
 
 .footer-contacts {
-  color: var(--secondary-text-color);
+  color: var(--footer-text-color);
   text-decoration: none;
 }
 
@@ -150,12 +213,19 @@ body {
 
 /* кнопка в индекс */
 .hero-button {
+  display: inline-block;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   text-align: center;
+
+  min-width: 200px;
+  height: 50px;
+  border: 0px;
+  border-radius: 4px;
+  padding: 10px 32px;
 }
 
 /* кнопки в портфолио */
