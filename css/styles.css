@@ -87,6 +87,11 @@ body {
 
 /* main */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 /* убирает точки и margin в списках */
 .list {
   list-style: none;
@@ -144,10 +149,6 @@ body {
 }
 
 /* секция our features в индекс */
-.features-list {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .features-list .title {
   color: var(--secondary-title-color);
   font-weight: 700;
@@ -164,15 +165,12 @@ body {
 
 /* секция чем мы занимаемся */
 .working {
-  padding-bottom: 94px;
+  padding-top: 0px;
 }
 
 /* секция наша команда в индекс */
 .team {
   background-color: var(--secondary-bcg-color);
-
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .team-list .title {
