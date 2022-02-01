@@ -38,7 +38,24 @@ body {
   outline: 2px solid tomato;
 }
 
+/* убирает точки и margin в списках */
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* убирает margin в h3 */
+.title {
+  padding: 0;
+  margin: 0;
+}
+
 /* header */
+.container.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 /* логотип */
 .logo {
@@ -54,12 +71,24 @@ body {
 }
 
 /* ссылки навигации */
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+.nav-list .item + .item {
+  margin-left: 50px;
+}
+
 .nav-list .link {
   color: var(--secondary-title-color);
   font-weight: 500;
   line-height: 1.33;
   letter-spacing: 0.02em;
   text-decoration: none;
+
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-list .link:hover,
@@ -73,6 +102,14 @@ body {
 }
 
 /* Контакты в шапке */
+.nav-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-contacts .item + .item {
+  margin-left: 50px;
+}
 .nav-contacts .contacts {
   color: var(--primary-text-color);
   font-weight: 500;
@@ -80,6 +117,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+
 .nav-contacts .contacts:hover,
 .nav-contacts .contacts:focus {
   color: var(--accent-color);
@@ -90,19 +128,6 @@ body {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-/* убирает точки и margin в списках */
-.list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-/* убирает margin в h3 */
-.title {
-  padding: 0;
-  margin: 0;
 }
 
 /* hero */
