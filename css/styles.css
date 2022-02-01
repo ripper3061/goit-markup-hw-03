@@ -129,10 +129,13 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
 
   margin-top: 0px;
   margin-bottom: 50px;
+}
+
+.section-title.index {
+  text-align: center;
 }
 
 /* секция our features в индекс */
@@ -145,7 +148,7 @@ body {
   margin-bottom: 10px;
 }
 
-.features-list p {
+.features-list .content {
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -170,7 +173,7 @@ body {
   margin-bottom: 10px;
 }
 
-.team-list p {
+.team-list .content {
   line-height: 1.19;
   text-align: center;
 
@@ -187,19 +190,18 @@ body {
   color: var(--secondary-title-color);
   font-size: 18px;
   line-height: 2;
-  text-align: left;
   letter-spacing: 0.06em;
 
   margin-bottom: 4px;
 }
 
-.projects-section-title > li {
+.projects-section-title > .item {
   margin-bottom: 30px;
 }
-.projects-section-title > li:last-child {
+.projects-section-title > .item:last-child {
   margin-bottom: 0;
 }
-.projects-section-title p {
+.projects-section-title .content {
   font-size: 16px;
   line-height: 1.87;
 
