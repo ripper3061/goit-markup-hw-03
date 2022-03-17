@@ -305,6 +305,7 @@ body {
   display: inline-block;
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  font-family: Roboto, sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -323,6 +324,7 @@ body {
   display: inline-block;
   background-color: var(--bcg-button-color);
   color: var(--secondary-title-color);
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
