@@ -308,12 +308,19 @@ body {
 .footer-address {
   color: var(--primary-white-color);
   font-style: normal;
+
+  margin-bottom: 9px;
 }
 
 .footer-contacts {
   color: var(--footer-text-color);
   text-decoration: none;
   font-style: normal;
+
+  margin-bottom: 9px;
+}
+.tel {
+  margin-bottom: 0px;
 }
 
 /* buttons */
