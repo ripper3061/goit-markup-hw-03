@@ -287,6 +287,14 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+
+.footer .logo {
+  display: flex;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
 .footer-address {
   color: var(--primary-white-color);
   font-style: normal;
