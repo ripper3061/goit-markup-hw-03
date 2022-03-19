@@ -231,8 +231,12 @@ body {
   text-align: center;
 
   margin-top: 0px;
-  margin-bottom: 30px;
-  /* padding-bottom: 30px; */
+  margin-bottom: 0px;
+}
+
+.titem {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 /* секция Наши проекты в портфолио */
