@@ -287,6 +287,9 @@ body {
   margin-bottom: 0px;
 }
 
+.projects-section-title .item-text {
+  padding: 20px 24px;
+}
 /* footer */
 .footer {
   background-color: var(--footer-bcg-color);
